@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin 控制台主页一</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../layuiadmin/style/admin.css" media="all">
+</head>
+<body>
+  
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+          <div class="layui-col-md12">
+            <div class="layui-card">
+              <div class="layui-card-header">快捷方式</div>
+              <div class="layui-card-body">
+                
+                <div class="layui-carousel layadmin-carousel layadmin-shortcut">
+                  <div carousel-item>
+                    <ul class="layui-row layui-col-space10">
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/KaoqinjiluList">
+                          <i class="layui-icon layui-icon-website"></i>
+                          <cite>考勤记录</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/JiaqishenqingList">
+                          <i class="layui-icon layui-icon-find-fill"></i>
+                          <cite>假期申请</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/ChuchaishenqingList">
+                          <i class="layui-icon layui-icon-loading-2"></i>
+                          <cite>出差申请</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/JiabanshenqingList">
+                          <i class="layui-icon layui-icon-chat"></i>
+                          <cite>加班申请</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/TiaoxiushenqingList">
+                          <i class="layui-icon layui-icon-read"></i>
+                          <cite>调休申请</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/Kaoqinchaxun">
+                          <i class="layui-icon layui-icon-tree"></i>
+                          <cite>考勤查询</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/ShujuzidianList">
+                          <i class="layui-icon layui-icon-set"></i>
+                          <cite>数据字典</cite>
+                        </a>
+                      </li>
+                      <li class="layui-col-xs3">
+                        <a lay-href="/jsp_kaoqin/StaffList">
+                          <i class="layui-icon layui-icon-password"></i>
+                          <cite>员工管理</cite>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="../../layuiadmin/layui/layui.js?t=1"></script>  
+  <script>
+  layui.config({
+    base: '../../layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'console']);
+  </script>
+</body>
+</html>
+
